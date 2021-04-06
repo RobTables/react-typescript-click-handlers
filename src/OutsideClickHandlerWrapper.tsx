@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, ReactNode } from 'react';
 
 export type WrapperProps = {
     onOutsideClick: Function,
-    children: HTMLElement
+    children: ReactNode
 }
 
 const useCapture: boolean = true;
