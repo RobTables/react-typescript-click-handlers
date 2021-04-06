@@ -15,7 +15,7 @@ In the hook approach, you will use `useRef` to pass a `RefObject` to the hook.
 import { useRef } from 'react';
 import { useOutsideClickHandler } from 'react-typescript-click-handlers';
 
-function Test()
+function OutsideClickHandlerHookExample()
 {
     const node = useRef(null);
     
@@ -36,13 +36,11 @@ In the wrapper approach, you will wrap your component(s) in the handler componen
 import { useRef } from 'react';
 import { InsideClickHandlerWrapper } from 'react-typescript-click-handlers';
 
-function Test()
+function InsideClickHandlerWrapperExample()
 {   
-    const onInsideClick = () => console.log("inside click");
-    
     return (
-      <InsideClickHandlerWrapper onOutsideClick={ onInisdeClick }>
-        <div ref={ node }>Inner Content</div>
+      <InsideClickHandlerWrapper onInsideClick={ () => console.log("inside click") }>
+        <div>Inner Content</div>
       </InsideClickHandlerWrapper>
     )
 }
@@ -59,7 +57,7 @@ The **Inner** click handlers accept a `function` to direct how it must respond w
 import { useRef } from 'react';
 import { useInsideClickHandler } from 'react-typescript-click-handlers';
 
-function Test()
+function InsideClickHandlerHookExample()
 {
     const node = useRef(null);
     
@@ -78,13 +76,11 @@ The **Outer** click handlers accept a `function` to direct how it must repond wh
 import { useRef } from 'react';
 import { OutsideClickHandlerWrapper } from 'react-typescript-click-handlers';
 
-function Test()
+function OutsideClickHandlerWrapperExample()
 {   
-    const onOutsideClick = () => console.log("outside click");
-    
     return (
-      <OutsideClickHandlerWrapper onOutsideClick={ onOutisdeClick }>
-        <div ref={ node }>Inner Content</div>
+      <OutsideClickHandlerWrapper onOutsideClick={ () => console.log("outside click wrapper") }>
+        <div>Inner Content</div>
       </OutsideClickHandlerWrapper>
     )
 }
