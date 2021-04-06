@@ -2,11 +2,11 @@
 
 A collection of click handlers for React 16+
 
-### Handlers
+## Handlers
 
 You can choose from both a **Click Handler Hook** or a **Click Handler Wrapper**. The difference being how the handler is implemented. Neither approach has a benefit over the other and it is simply personal preference of which to use.
 
-#### Hooks
+### Hooks
 
 In the hook approach, you will use `useRef` to pass a `RefObject` to the hook.
 
@@ -27,7 +27,7 @@ function Test()
 }
 ```
 
-#### Wrappers
+### Wrappers
 
 In the wrapper approach, you will wrap your component(s) in the handler component.
 
@@ -48,7 +48,7 @@ function Test()
 }
 ```
 
-### Available Handlers
+## Available Handlers
 
 As of the latest commit you have the choice of **Inner** or **Outer** click handlers. 
 
