@@ -85,3 +85,6 @@ function OutsideClickHandlerWrapperExample()
     )
 }
 ```
+
+## Why an Inside Click Handler when there's `onClick()`?
+The Inside Click Handler is beneficial when you have a component that is entirely made up of other components where you may not want to create a native DOM component wrapper within the parent. 
