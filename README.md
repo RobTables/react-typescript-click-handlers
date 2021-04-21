@@ -33,7 +33,6 @@ In the wrapper approach, you will wrap your component(s) in the handler componen
 
 **InsideClickHandlerWrapper**
 ```
-import { useRef } from 'react';
 import { InsideClickHandlerWrapper } from 'react-typescript-click-handlers';
 
 function InsideClickHandlerWrapperExample()
@@ -73,7 +72,6 @@ The **Outer** click handlers accept a `function` to direct how it must repond wh
 
 **OutsideClickHandlerWrapper**
 ```
-import { useRef } from 'react';
 import { OutsideClickHandlerWrapper } from 'react-typescript-click-handlers';
 
 function OutsideClickHandlerWrapperExample()
